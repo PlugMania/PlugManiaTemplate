@@ -28,18 +28,18 @@ public class Template extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		Util.log(Util.pdfFile.getName() + " has been disabled!");
+		Util.log(Util.pdfFile.getName() + Lang._("pluginDisabled"));
 		
 	}
 	
 	@Override
 	public void onEnable() { //enable
 		Util.pdfFile = getDescription();
-		Util.log("----------- " + Util.pdfFile.getName() + " has been Enabled" + " -----------");
+		Util.log("----------- " + Util.pdfFile.getName() + Lang._("pluginEnabled") + " -----------");
 		Util.log(Util.pdfFile.getName() + " Version " + Util.pdfFile.getVersion());
 		Util.log(Util.pdfFile.getName() + " By " + Util.pdfFile.getAuthors().get(0));
 		
-		ConfigUtil.loadConfig("config", "resources/config");
+		ConfigUtil.loadConfig("config", "config");
 		mainConf = ConfigUtil.getConfig("config");
 		
 		lang.updateLocale(mainConf.getString("lang"));
@@ -51,8 +51,7 @@ public class Template extends JavaPlugin {
 		
 		registerCommands();
 		
-		Util.debug(Lang._("loadedSuccess"));
-		Util.log("Succesfully loaded");
+		Util.log(Lang._("loadedSuccess"));
 	}
 	
 	private void registerCommands(){

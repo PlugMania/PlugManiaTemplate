@@ -72,7 +72,7 @@ public class Lang {
 		}
 		catch (MissingResourceException ex)
 		{
-			Util.log("Missing translation key in translation file");
+			Util.log("Missing translation key in translation file"); //Must never be put into properties since a loop can be created
 			return defaultBundle.getString(string);
 		}
 	}

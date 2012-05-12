@@ -21,7 +21,7 @@ public class ConfigUtil {
 	
 	public static YamlConfiguration getConfig(String confName){
 		if(confName == null) return null;
-		File file = new File(plugin.getDataFolder() + File.separator + confName + ".yml");	
+		File file = new File(plugin.getDataFolder() + File.separator + confName + ".yml");
 		if(file.exists()){
 			YamlConfiguration conf = YamlConfiguration.loadConfiguration(file);
 			return conf;
@@ -82,7 +82,7 @@ public class ConfigUtil {
                 }
             } catch (Exception e) {
                 Util.log(Lang._("failToCreateFile") + confName);
-                Util.debug(e.getMessage());
+                e.printStackTrace();
             }
 		}
 	}
