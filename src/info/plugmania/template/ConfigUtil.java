@@ -1,4 +1,4 @@
-package com.github.plugmania.template;
+package info.plugmania.template;
 
 import java.io.File;
 import java.io.FileOutputStream;

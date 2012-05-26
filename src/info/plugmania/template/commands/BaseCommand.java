@@ -1,14 +1,15 @@
-package com.github.plugmania.template.commands;
+package info.plugmania.template.commands;
 
+
+import info.plugmania.template.Lang;
+import info.plugmania.template.Template;
+import info.plugmania.template.Util;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.github.plugmania.template.Lang;
-import com.github.plugmania.template.Template;
-import com.github.plugmania.template.Util;
 
 public class BaseCommand implements CommandExecutor {
 

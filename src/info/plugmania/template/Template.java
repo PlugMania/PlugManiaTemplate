@@ -1,6 +1,9 @@
-package com.github.plugmania.template;
+package info.plugmania.template;
 
 
+
+import info.plugmania.template.commands.BaseCommand;
+import info.plugmania.template.listeners.PlayerListener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -8,8 +11,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.github.plugmania.template.commands.BaseCommand;
-import com.github.plugmania.template.listeners.PlayerListener;
 
 public class Template extends JavaPlugin {
 	public YamlConfiguration mainConf;

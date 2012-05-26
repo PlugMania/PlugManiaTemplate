@@ -1,9 +1,10 @@
-package com.github.plugmania.template.listeners;
+package info.plugmania.template.listeners;
 
+
+import info.plugmania.template.Template;
 
 import org.bukkit.event.Listener;
 
-import com.github.plugmania.template.Template;
 
 public class PlayerListener implements Listener {
 

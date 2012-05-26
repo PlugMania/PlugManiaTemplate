@@ -1,4 +1,4 @@
-package com.github.plugmania.template;
+package info.plugmania.template;
 
 import java.util.Locale;
 import java.util.MissingResourceException;
